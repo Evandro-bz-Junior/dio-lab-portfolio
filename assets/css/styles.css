@@ -33,9 +33,9 @@ html[data-theme='light'] .brand__logo {
   filter: invert(1);
 }
 
-html[data-theme='light'] .technologies__logo {
+/* html[data-theme='light'] .technologies__logo {
   filter: invert(80%);
-}
+} */
 
 * {
   margin: 0;
@@ -259,9 +259,10 @@ main {
   gap: 1.5rem;
 }
 
-.main__content2 iframe {
+.main__content2 .main__image {
   width: 100%;
   aspect-ratio: 16/9;
+  object-fit: contain;
 }
 
 .technologies {
@@ -361,6 +362,10 @@ main {
 
 .card__buttons .btn span {
     font-size: 1rem;
+}
+.card__buttons .btn span a{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .card__body .technologies__list {
@@ -651,6 +656,7 @@ footer p {
   
   .technologies__logo {
     height: 3rem;
+    filter: grayscale(100%) brightness(0.9) contrast(1.2);
   }
 
   p, span, li {
